@@ -1,0 +1,25 @@
+class D
+{
+  public static void main(String[] args)
+  {
+     int dept[][][]=
+     {
+		 {{66,1,55},{66,2,56},{66,3,57}},
+			 {{63,1,84},{63,2,85},{63,3,87}}
+     };
+     for(int i=0;i<dept.length;i++)
+     {
+        System.out.print("dept :"+(i+1));
+	 for (int j=0;j<dept[i].length;j++)
+	 {
+       System.out.print("emp :"+(j+1));
+        for (int k=0;k<dept[i][j].length;k++)
+		{
+          System.out.print(dept[i][j][k]+"\t");
+        }
+         System.out.println();
+	 }
+    System.out.println();
+	 }
+     }
+}	 
